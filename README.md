@@ -20,14 +20,29 @@ replace text, images, and links with your own information.
 - 🎖 Honors and Awards
 - 📖 Educations
 
-## Local Preview
+## 启动方法 / Getting Started
 
-Open `index.html` directly in a browser, or serve locally:
+### 方式一：直接打开（最简单）
+双击 `index.html` 即可在浏览器中查看。
 
+### 方式二：本地起一个 HTTP 服务（推荐）
+
+使用 Python（已自带）:
 ```powershell
+cd ruipage
 python -m http.server 8000
-# then visit http://localhost:8000
+# 然后在浏览器访问 http://localhost:8000
 ```
+
+使用 Node.js:
+```powershell
+cd ruipage
+npx serve .
+# 或者
+npx http-server -p 8000
+```
+
+使用 VS Code：安装 **Live Server** 扩展 → 右键 `index.html` → `Open with Live Server`。
 
 ## Deploy to GitHub Pages
 
